@@ -1,0 +1,64 @@
+1. Classes
+-The program should include the following classes:
+--Account, Bank, CoinCollector, BankUtility, and BankManager.
+2. class Account
+-stores and managers account-specific data(performs transactions)
+--includes the following attributes:
+---account_number: 8 digit account number that gets assigned at random
+---first and last name of account holder
+---ssn: 9 digit ssn
+---pin: 4 digit pin assigned at random
+---balance: account balance stores in cents, starting at 0.
+--includes the following methods:
+---deposit: adds specific amount to the account balance
+---withdraw: deducts the specific amount if sufficient funds exist
+---isValidPin: validates the entered PIN
+---to_string(): returns a string representation of the account details
+---getter and setter methods for first, last, ssn, pin, and balance.
+3. class Bank
+-should manager all bank accounts (stores up to 100 accounts)
+-Includes the following attributes:
+--MAX_ACCOUNTS: Stores up to 100 accounts
+--Accounts: a list of all the accounts
+-Includes the following methods:
+--addAccountToBank: adds an account to the bank
+--removeAccountFromBank: removes specific account from the bank
+--findAccount: finds account details in bank
+--addMonthlyInterest: adds monthly interest to all accounts based on specific user input of annual interest rate.
+--listAllAccounts: Lists all active accounts in the bank
+4. class CoinCollector
+-converts coin strings into monetary value
+--includes the parseChange method which takes a string of coin characters and returns the total value in cents.
+5. class BankUtility
+-Provides utility functions for input validation, conversions, and random number generations.
+-Methods included:
+--isNumeric: checks if the input is numeric
+--promptUserForString: Repeatedly prompts the user for a non-empty string
+--promptUserForPositiveNumber: Repeatedly prompts the user for a positive numeric value
+--convertFromDollarsToCents: Converts a dollar amount to cents
+--generateRandominteger: Generates a random integer within the specified range.
+6. class BankManager
+-should display the menu and handle user input
+-Methods included:
+--Main: Displays the main menu and handles user selections for various banking operations
+---adding, removing, or closing accounts
+---depositing or withdrawing money
+---displaying account balances and details
+---listing all accounts and adding monthly interest
+-promptForAccountNumberAndPin: validates the user by prompting for an account number and then the PIN.
+-Other methods that are included in this class that perform the task that is in there name is:
+--Add Account
+--Remove Account
+--Deposit
+--Withdraw
+--Show balance
+--Add Monthly Interest
+--List All Accounts
+--Close Account
+--Display Account Details
+7. Execution
+-The program starts by creating a BankManager object and calling its main() method.
+-This launches the interactive menu for managing the bank until the user chooses to exit.
+
+
+

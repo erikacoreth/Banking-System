@@ -1,17 +1,17 @@
-Banking System Simulator
-This project is a console-based Banking System Simulator implemented in Python, providing a comprehensive framework for managing bank accounts and operations.
+# Python Banking Application
 
-Key Features
-Account Management: Create, deposit, withdraw, and close accounts. Accounts include attributes such as account number, account holder details, PIN, and balance.
-Bank Functionality: Manage up to 100 accounts, add monthly interest, and list all active accounts.
-Coin Conversion: Parse coin strings into monetary values using the CoinCollector class.
-Utility Functions: Input validation, dollar-to-cents conversion, and random number generation handled by the BankUtility class.
-Interactive Menu: The BankManager class provides an easy-to-use interface for managing accounts, transactions, and viewing details.
-Classes Overview
-Account: Manages individual account data and transactions.
-Bank: Stores and handles up to 100 accounts.
-CoinCollector: Converts coin strings to monetary values in cents.
-BankUtility: Offers utility methods for validations and random number generation.
-BankManager: Provides the main menu and handles user interactions.
-Program Execution
-The program starts by creating a BankManager object and launching the interactive menu for banking operations. Users can manage accounts, perform transactions, view details, and exit the system when finished.
+## Overview
+This Python Banking Application allows the management of bank accounts through a console-based interface. Users can add, remove, and find accounts, as well as make deposits and withdrawals, display account details, and manage interest calculations.
+
+## Features
+- **Account Management**: Create new bank accounts with unique account numbers and PINs.
+- **Transaction Handling**: Perform deposits and withdrawals.
+- **Account Queries**: Search for existing accounts by account number.
+- **Interest Management**: Apply monthly interest rates to all accounts.
+- **Reporting**: List all accounts and their statuses within the bank.
+
+## How to Run
+To run the banking application, ensure you have Python installed on your system. Clone this repository, navigate to the directory containing the application, and run the following command:
+```
+python bank_manager.py
+
